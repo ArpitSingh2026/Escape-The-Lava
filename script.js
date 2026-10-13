@@ -168,7 +168,7 @@ let winGate = ({x: 1295, y: 393, width: 20, height: 10}
 
 function winGate() {
     if(
-        player.x < winGate.x + winGate.width && player.x + player.width > winGate.x && player.y + winGate.y + winGate.height.x &&  player.y + player.height > winGate.y
+        player.x < winGate.x + winGate.width && player.x + player.width > winGate.x && player.y < winGate.y + winGate.height.x &&  player.y + player.height > winGate.y
     ) {
         window.location.href = "win.html"
     }
