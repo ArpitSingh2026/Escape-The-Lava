@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(231, 69, 101);
+}
+
+h1 {
+    text-align: center;
+    font-size: 250px;
+    color: rgb(39, 38, 38);
+}
+
+button {
+    transform: translate3d(90px, -200px,40px);
+    font-size: 40px;
+    border: 3px solid grey;
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.button:hover {
+    color: brown;
+}
