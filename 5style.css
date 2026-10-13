@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.locked {
+    height: 500px;
+    width: 550px;
+    background-color: cadetblue;
+    border: 8px solid rgb(68, 68, 67);
+    background-image: url(My\ locks.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.locked i {
+    font-size: 350px;
+    transform: translate3d(-18px, 70px, 70px);
+}
+
+.locks {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:rgb(252, 53, 4)
+}
+
+.pin-text {
+    font-size: 30px;
+    color: rgb(53, 163, 53);
+    transform: translate3d(160px, 260px, 70px);
+}
+
+.pin {
+    height: 220px;
+    width: 270px;
+    background-color: #5a6572;
+    transform: translate3d(10px, 60px, 70px);
+    margin-top: 150px;
+    border-radius: 5%;
+}
+
+.pin b {
+    display: grid;
+    font-size: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    height: 100%;
+    float: inline-end;
+    border: 3px solid rgb(105, 99, 99);
+    color: black;
+}
+
+.pin button:hover {
+  background-color: rgb(128, 126, 126);
+  cursor: pointer;
+  animation: pin 1s ease-in-out alternate;
+}
+
+@keyframes pin{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.pinShow {
+    height: 50px;
+    width: 255px;
+    background-color: #7088a0;
+    border-radius: 5%;
+    text-align: center;
+    border: 4px solid black;
+    font-size: 30px;
+    transform: translate3d(-260px, -14px, 70px);
+}
+
+.enter {
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    border:  4px solid rgb(82, 131, 43);
+    background-color: #5a6572;
+    font-size: 19px;
+    transform: translate3d(-233px, 215px, 70px);
+}
+
+.enter :hover {
+    color: rgb(245, 245, 194);
+}

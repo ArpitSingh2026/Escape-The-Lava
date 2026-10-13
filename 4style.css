@@ -1,0 +1,91 @@
+body {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: crimson;
+    cursor:auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #462e2e;
+    border-radius: 5px;
+    background-color: rgb(218, 223, 168);
+    height: 350px;
+    width: 1300px;
+}
+
+h1 {
+    margin-top: 60px;
+    overflow: hidden;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline rgba(121, 238, 91, 0.932);
+    color: #352222;
+    animation: h1 3s ease-in-out infinite;
+}
+
+@keyframes h1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-20deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+
+
+p {
+    color: black;
+    font-family:  'Calibri';
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin: 0;
+}
+
+h3 {
+    color:burlywood;
+    font-size: 19px;
+}
+
+a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.sticker {
+    color:burlywood;
+    font-size: 19px;
+    animation: sticker  3s ease-in-out infinite;
+} 
+
+@keyframes sticker {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,145 @@
+
+body {
+    background-color: rgb(198, 75, 223);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(253, 95, 3);
+    text-decoration: 8px solid underline rgb(248, 245, 32);
+    font-size: 100px;
+}
+
+
+.play-btn {
+    background-color: rgb(233, 233, 54);
+    font-size: 32px;
+    filter: blur(20, 100, 40);
+    height: 100px;
+    width: 222px;
+    border-radius: 20px;
+    border: 10px solid  rgb(245, 93, 38);
+    margin-left: 1100px;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    animation: play-btn 4s infinite linear;
+}
+
+@keyframes play-btn {
+    0% {
+       color: yellowgreen; 
+    }
+    33% {
+       color: rgb(241, 80, 93); 
+    }
+    66% {
+       color: rgb(235, 110, 235); 
+    }
+    100% {
+       color: rgb(86, 202, 238); 
+    }
+}
+
+.more {
+    text-decoration: none;
+    border : 3px solid rgb(247, 8, 8);
+    font-size: 22px;
+    font-family: sans-serif;
+    background-color: rgb(248, 68, 173);
+    border-radius: 5px;
+    color: antiquewhite;
+    text-transform: none;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+   position: absolute;
+   left: 20px;
+   top: 220px;
+   font-size: 25px;
+   color: rgb(2, 2, 53);
+}
+
+h2 {
+    position: absolute;
+    left : 20px;
+    top: 310px;
+    color: rgb(215, 238, 7);
+}
+
+.age {
+    position: absolute;
+    left: 20px;
+    top: 390px;
+     color: rgb(209, 231, 5);
+}
+
+
+.search input {
+    height: 35px;
+    width: 250px;
+    border-radius: 20px;
+    border: 3px solid  rgb(187, 207, 5);
+    font-size: 18px;
+    transform: translate3d(-450px, -220px, 70px);
+    cursor: pointer;
+}
+
+
+.search input:focus {
+    background-color: rgb(238, 238, 236);
+    border: rgb(238, 238, 236);
+}
+
+.Age {
+    font-size: 20px;
+    transform: translate3d(-520px, -180px, 70px);
+    cursor: pointer;
+}
+
+.code {
+    position: absolute;
+    left: 20px;
+    top: 470px;
+     color: rgb(192, 212, 7);
+}
+
+.arrow {
+    font-size: 20px;
+    transform: translate3d(-535px, -140px, 0px);
+    cursor: pointer;
+}
+
+.password {
+    height: 35px;
+    width: 250px;
+    border-radius: 20px;
+    border: 3px solid rgb(87, 97, 1);
+    font-size: 18px;
+    transform: translate3d(-390px, -170px, 70px);
+    cursor: pointer;
+}
+
+.open {
+    font-size: 20px;
+    transform: translate3d(-330px, -170px, 0px);
+    color: red;
+    cursor: pointer;
+}
