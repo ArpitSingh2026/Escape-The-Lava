@@ -73,7 +73,7 @@ function draw() {
    ctx.fillRect(block.x, block.y, block.width, block.height); 
     winGateCheck();
 });
-
+ winGateCheck();
  ctx.fillStyle ="grey";
 ctx.fillRect(winGate.x, winGate.y, winGate.width, winGate.height);
    requestAnimationFrame(draw);
@@ -168,8 +168,9 @@ let winGate = ({x: 1295, y: 393, width: 20, height: 10}
 
 function winGateCheck() {
     if(
-        player.x < winGate.x + winGate.width && player.x + player.width > winGate.x && player.y < winGate.y + winGate.height.x &&  player.y + player.height > winGate.y
+        player.x < winGate.x + winGate.width && player.x + player.width > winGate.x && player.y < winGate.y + winGate.height &&  player.y + player.height > winGate.y
     ) {
+        console.log("gate touched")
         window.location.href = "win.html";
     }
 };
