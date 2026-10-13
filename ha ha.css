@@ -1,0 +1,13 @@
+h1 {
+    color: yellow;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 300px;
+
+}
+
+body {
+    display: flex;
+    margin-bottom: 240px;
+    background-color: orangered;
+}

@@ -1,0 +1,25 @@
+div {
+    height: 300px;
+    width:350px;
+    background-color : yellow;
+    border: 5px solid black;
+    transform: translate3d(500px, 89px, 70px);
+    background-image: url(MY\ pic\ sticker\ made\ by\ me.PNG);
+    margin-left: 40px;
+    
+}
+
+h3 {
+    transform: translate3d(550px,70px,80px);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+body {
+    background-color: blue;
+}
