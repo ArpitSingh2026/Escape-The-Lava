@@ -16,6 +16,22 @@ let player = {
     grounded: false
 };
 
+let lavaBlocks = [
+    {
+     x: 200,
+     y: 500,
+     width: 80,
+     height: 20
+    },
+
+    {
+     x: 230,
+     y: 400,
+     with: 80,
+     height: 20
+    }
+]
+
     window.addEventListener('keydown', function (event){
     if (event.key === 'd'){
      player.dx = player.speed;
@@ -59,6 +75,19 @@ function update() {
         }
     });
  }
+
+ lavaBlocks.forEach(lava => {
+    ctx.fillStyle = "red";
+    ctx.fillRect(lava.x, lava.y, lava.width, lava.height);
+    if(player.x <lava.x + lava.width &&
+       player.x + player.width > lava.x &&
+       player.y < lava.y + lava.height &&
+       player.y + player.height > lava.y 
+    ) {
+        alert("You Lose, Fall Into Lava");
+        window.location.reload();
+    }
+ })
 
 function draw() {
     update();
@@ -169,7 +198,8 @@ let winGate = ({x: 1295, y: 393, width: 20, height: 10}
 
 function winGateCheck() {
     if(
-        player.x < winGate.x + winGate.width && player.x + player.width > winGate.x && player.y < winGate.y + winGate.height &&  player.y + player.height > winGate.y
+        player.x < winGate.x + winGate.width && player.x + player.width > winGate.x && 
+        player.y < winGate.y + winGate.height &&  player.y + player.height > winGate.y
     ) {
         console.log("gate touched")
         window.location.href = "win.html";
