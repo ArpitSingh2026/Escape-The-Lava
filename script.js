@@ -1,6 +1,5 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-console.log(canvas);
 
 const playerImage = new Image();
 playerImage.src =  "My player.PNG";

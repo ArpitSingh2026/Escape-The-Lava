@@ -1,5 +1,5 @@
 body {
-   background-color: yellowgreen;
+   background-color: rgb(247, 107, 212);
 }
 
 h1 {
@@ -18,15 +18,40 @@ h1 {
 }
 
 button {
-    font-size: 40px;
+    font-size: 10x;
     border-radius: 20px;
-    color: blueviolet;
-    background-color: cadetblue;
-    border: 5px solid grey;
+    color: rgb(59, 58, 59);
+    background-color: rgb(7, 237, 245);
+    border: 5px solid rgba(129, 129, 129, 0.904);
     cursor: pointer;
 }
 
 a {
     text-decoration: none;
     color: blueviolet;
+}
+
+.win {
+    background-color: blanchedalmond;
+}
+
+h3 {
+    font-size: 50px;
+    transform: translate3d(460px,-180px,10px);
+    font-family: cursive;
+}
+
+@keyframes h3 {
+    0% {
+       color: yellowgreen; 
+    }
+    33% {
+       color: rgb(241, 80, 93); 
+    }
+    66% {
+       color: rgb(235, 110, 235); 
+    }
+    100% {
+       color: rgb(86, 202, 238); 
+    }
 }
