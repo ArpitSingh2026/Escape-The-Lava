@@ -25,6 +25,6 @@ function CheckPassword(event) {
          event.preventDefault();
 
         details.open = true;
-        alert('Password Must Be At Least Of 8 Charcter')
+        alert('Password Must Be Only Of 8 Charcter')
     }
 }
