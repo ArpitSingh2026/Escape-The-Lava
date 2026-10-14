@@ -15,3 +15,16 @@ function checkPin() {
     }
 }
 
+function CheckPassword(event) {
+    const Password = document.querySelector('.password');
+    const details = document.querySelector('.arrow').parentElement;
+    const passwordLength = Password.value.length;
+      if(passwordLength === 8) {
+        window.location.href = '2index.html';
+      }else {
+         event.preventDefault();
+
+        details.open = true;
+        alert('Password Must Be At Least Of 8 Charcter')
+    }
+}
