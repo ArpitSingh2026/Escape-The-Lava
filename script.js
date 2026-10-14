@@ -16,21 +16,13 @@ let player = {
     grounded: false
 };
 
-let lavaBlocks = [
-    {
-     x: 200,
-     y: 500,
-     width: 80,
-     height: 20
-    },
-
-    {
-     x: 230,
-     y: 400,
-     with: 80,
-     height: 20
-    }
-]
+ let lavas = [{
+    x:0 ,
+    y: 530 ,
+    width:9000,
+    height : 30,
+    color: "orange"
+ }];
 
     window.addEventListener('keydown', function (event){
     if (event.key === 'd'){
@@ -73,21 +65,23 @@ function update() {
                 player.grounded = true;
             }
         }
-    });
- }
+    })
+ 
 
- lavaBlocks.forEach(lava => {
-    ctx.fillStyle = "red";
-    ctx.fillRect(lava.x, lava.y, lava.width, lava.height);
-    if(player.x <lava.x + lava.width &&
-       player.x + player.width > lava.x &&
-       player.y < lava.y + lava.height &&
-       player.y + player.height > lava.y 
-    ) {
+     lavas.forEach(lava => {
+    if(player.x <lava.x + lava.width && player.x + player.width > lava.x &&
+       player.y < lava.y + lava.height && player.y + player.height > lava.y 
+    ){
         alert("You Lose, Fall Into Lava");
+        player.x = 50;
+        player.y = 100;
+        player.dx = 0;
+        player.dy = 0;
+        player.grounded = false;
         window.location.reload();
     }
  })
+};
 
 function draw() {
     update();
@@ -97,12 +91,13 @@ function draw() {
     player.y += player.dy;
    blocks.forEach(block => { 
     ctx.fillStyle = "brown";
-    ctx.strokeStyle = "gold"
-    ctx.lineWidth = "3"
-    ctx.strokeRect(3,3,canvas.width,canvas.height)
    ctx.fillRect(block.x, block.y, block.width, block.height); 
     winGateCheck();
 });
+ lavas.forEach(lava => {
+   ctx.fillStyle = "red";
+ ctx.fillRect(lava.x, lava.y, lava.width, lava.height);
+ })
  winGateCheck();
  ctx.fillStyle ="grey";
 ctx.fillRect(winGate.x, winGate.y, winGate.width, winGate.height);
