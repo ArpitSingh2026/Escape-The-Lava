@@ -50,7 +50,7 @@ h1 {
 
 
 p {
-    color: black;
+    color: rgb(77, 74, 74);
     font-family:  'Calibri';
     flex-wrap: wrap;
     font-size: 20px;
