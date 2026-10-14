@@ -92,3 +92,14 @@ body {
 .enter :hover {
     color: rgb(245, 245, 194);
 }
+
+.write {
+    transform: translate3d(-200px, 200px, 80px);
+    cursor: pointer;
+}
+
+.see {
+    transform: translate3d(-200px, 200px, 7px);
+    color: grey;
+    letter-spacing: 2px;
+}
