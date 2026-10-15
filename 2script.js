@@ -28,3 +28,12 @@ function CheckPassword(event) {
         alert('Password Is Necessary')
     }
 }
+
+function toggleAudio() {
+    var audio = document.getElementById("MybgMusic");
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
