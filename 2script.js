@@ -29,8 +29,6 @@ function CheckPassword(event) {
     }
 }
 
-
-    
-document.body.addEventListener('click', () {
+document.body.addEventListener('click', () => {
     document.ATTRIBUTE_NODE.getElementById("MybgMusic").play().catch(e => {});
 }, {once: true});
