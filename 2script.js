@@ -29,11 +29,8 @@ function CheckPassword(event) {
     }
 }
 
-function toggleAudio() {
-    var audio = document.getElementById("MybgMusic");
-    if (audio.paused) {
-        audio.play();
-    }else {
-        audio.pause();
-    }
-}
+
+    
+document.body.addEventListener('click', () {
+    document.ATTRIBUTE_NODE.getElementById("MybgMusic").play().catch(e => {});
+}, {once: true});
