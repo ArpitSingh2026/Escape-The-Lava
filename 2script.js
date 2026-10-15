@@ -33,7 +33,7 @@ function toggleAudio() {
     var audio = document.getElementById("MybgMusic");
     if (audio.paused) {
         audio.play();
-    } else {
+    }else {
         audio.pause();
     }
 }

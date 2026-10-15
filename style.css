@@ -143,3 +143,21 @@ h2 {
     color: red;
     cursor: pointer;
 }
+
+.Music {
+    transform: translate3d(600px, -150px, 30px);
+    height: 50px;
+    width: 125px;
+    font-size : 15px;
+    border-radius: 5%;
+    background-color: burlywood;
+    border: 3px solid brown;
+    color :rgb(2, 25, 32);
+    cursor: pointer;
+}
+
+.tune {
+    transform: translate3d(1190px,238px ,40px);
+    font-size: 18px;
+    color:rgb(235, 159, 59);
+}
