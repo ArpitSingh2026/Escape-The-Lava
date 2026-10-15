@@ -16,6 +16,9 @@ function checkPin() {
 }
 
 function CheckPassword(event) {
+    let clickSound = new Audio ('Game Click Sound Effect (1).mp3');
+    clickSound.play().catch(e => console.log("click music"))
+
     const Password = document.querySelector('.password');
     const details = document.querySelector('.arrow').parentElement;
     const passwordLength = Password.value.length;
@@ -29,6 +32,10 @@ function CheckPassword(event) {
     }
 }
 
-document.body.addEventListener('click', () => {
-    document.ATTRIBUTE_NODE.getElementById("MybgMusic").play().catch(e => {});
-}, {once: true});
+let audio = window.parent.audioElement || new Audio ('Gaming Background Music 1 Hour (2).mp3')
+audio.loop = true;
+window.parent.audioElement = audio;
+
+document.addEventListener('click', () => {
+    audio.play().catch(e => console.log(e));
+},{once: true});
