@@ -10,20 +10,42 @@ h1 {
     font-size: 100px;
     text-align: center;
     margin-top: 300px;
+    animation: h1 1.5s ease-in-out  alternate;
 }
 
 .loading-btn {
-    color: black;
-    background-color: rgb(255, 61, 47);
+    background-color: rgba(8, 1, 0, 0);
     text-decoration:  red dotted;
-    border: 3px solid rgb(226, 250, 9);
-    height: 100px;
-    width: 200px;
-    font-size: 40px;
+    border: 1.5px solid rgb(141, 157, 158);
+    height: 30px;
+    width: 50px;
+    font-size: 20px;
     margin-left: 400px;
     text-decoration: none;
+    float: right;
+    margin-top: 90px;
+    animation: loading-btn 1s ease-in-out  infinite alternate;
 }
 
-button {
+@keyframes h1{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes loading-btn{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+a{
     text-decoration: none;
+    color: rgb(245, 170, 79);
 }
