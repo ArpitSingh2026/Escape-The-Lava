@@ -33,6 +33,7 @@ a {
 
 .win {
     background-color: blanchedalmond;
+    animation: win 4s infinite linear;
 }
 
 h3 {
@@ -41,7 +42,7 @@ h3 {
     font-family: cursive;
 }
 
-@keyframes h3 {
+@keyframes win {
     0% {
        color: yellowgreen; 
     }
@@ -53,5 +54,15 @@ h3 {
     }
     100% {
        color: rgb(86, 202, 238); 
+    }
+}
+
+h1 {
+    animation: h1 3s alternate;
+}
+
+@keyframes h1 {
+    15% {
+        transform: rotate(360deg);
     }
 }
